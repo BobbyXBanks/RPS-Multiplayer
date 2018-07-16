@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>RPS-GAME</title>
+
+    <!-- <link rel="stylesheet" type="text/css" href="css/reset.css"> -->
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+
+    <!-- jQuery -->
+    <script src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
+
+    <!-- Bootstrap CDN-->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+    <!-- Firebase Reference -->
+    <script src="https://www.gstatic.com/firebasejs/4.12.0/firebase.js"></script>
+</head>
+
+<body>
+    <div class="bkg">
+
+        <div class="container-fluid container-head">
+            <div class="row row-head">
+                <div class="col col-xs-2 col-title-pic">
+                    <img class="title-pic" src="assets/img/Cat.png" alt="A rock">
+                </div>
+
+                <div class="col col-xs-10 col-title">
+                    <h1>Rock Paper Scissors</h1>
+                </div>
+
+            </div>
+        </div>
+
+        <div class="container container-start">
+            <div class="row row-start">
+                <div class="col col-xs-12 col-start">
+                    <span>Play</span>
+                    <br />
+                    <input type="text" id="name-input" value="Name" />
+                    <input type="button" id="name-submit" value="Start" />
+                </div>
+            </div>
+            <div class="row row-message">
+                <div class="col col-xs-12 col-message">
+                </div>
+            </div>
+        </div>
+
+        <div class="container container-play">
+            <div class="row row-score">
+                <div class="col col-xs-4 col-score col-win">
+                    <span></span>
+                </div>
+                <div class="col col-xs-4 col-score col-tie">
+                    <span></span>
+                </div>
+                <div class="col col-xs-4 col-score col-lose">
+                    <span></span>
+                </div>
+            </div>
+            <div class="row row-play-choice">
+                <div class="col col-xs-4 col-play-rock col-play-pic">
+                    <img src="assets/img/rock-small.jpg" alt="rock" data-move="rock" />
+                    <br />
+                    <span>Rock</span>
+                </div>
+
+                <div class="col col-xs-4 col-play-paper col-play-pic">
+                    <img src="assets/img/paper-small.jpg" alt="paper" data-move="paper" />
+                    <br />
+                    <span>Paper</span>
+                </div>
+
+                <div class="col col-xs-4 col-play-scissors col-play-pic">
+                    <img src="assets/img/scissors-small.jpg" alt="scissors" data-move="scissors" />
+                    <br />
+                    <span>Scissors</span>
+                </div>
+            </div>
+
+            <div class="row row-play-battle">
+                <div class="col col-xs-6 col-my-play">
+                    <div class="pic-my-play">
+                    </div>
+                    <div class="my-move-caption">
+                    </div>
+                </div>
+
+                <div class="col col-xs-6 col-opponent-play">
+                    <div class="pic-opponent-play">
+                    </div>
+                    <div class="opponent-move-caption">
+                    </div>
+                </div>
+            </div>
+            <div class="row row-reckoning">
+                <div class="col col-xs-12 col-reckoning">
+                    <div class="outcome-message">
+                    </div>
+                    <div class="winning-pic">
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+
+
+
+    </div>
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/3.3.0/firebase.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="assets/js/app.js"></script>
+</body>
+
+</html>
